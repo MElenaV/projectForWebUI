@@ -1,4 +1,4 @@
-package com.geekbrains.hw3;
+package com.geekbrains.hw2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Description;
@@ -19,8 +19,8 @@ import static org.junit.Assert.assertTrue;
 public class AutomationPractiseHW2 {
 
     @Test
-    @Story("Покупка рубашки")
-    @Description("Проверка добавления рубашки в корзину")
+    @Story("Поиск платья")
+    @Description("Проверка поисковой строки")
     public void searchDressTest()
     {
         WebDriverManager.chromedriver().setup();
