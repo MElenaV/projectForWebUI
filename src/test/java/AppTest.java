@@ -1,5 +1,3 @@
-package lesson3;
-
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
