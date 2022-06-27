@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class AutomationPractiseHW4 {
+public class AutomationPractiseHW5 {
     WebDriver driver;
     WebDriverWait webDriverWait;
 
