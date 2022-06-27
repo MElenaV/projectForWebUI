@@ -1,4 +1,4 @@
-package com.geekbrains.hw4;
+package com.geekbrains.hw5;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Description;
