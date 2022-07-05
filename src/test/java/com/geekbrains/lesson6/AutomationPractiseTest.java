@@ -1,5 +1,7 @@
 package com.geekbrains.lesson6;
 
+import com.beust.ah.A;
+import com.geekbrains.lesson7.AdditionalAllureSteps;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.AfterEach;
@@ -11,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 
 @Feature("Добавление в корзину")
 public class AutomationPractiseTest {
@@ -23,7 +26,7 @@ public class AutomationPractiseTest {
 
     @BeforeEach
     void initDriver() {
-        driver = new ChromeDriver();
+        driver = new EventFiringDecorator(new AdditionalAllureSteps()).decorate(new ChromeDriver());
         driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
     }
 

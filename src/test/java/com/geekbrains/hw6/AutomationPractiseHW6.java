@@ -1,4 +1,4 @@
-package hw6;
+package com.geekbrains.hw6;
 
 import com.geekbrains.lesson6.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
